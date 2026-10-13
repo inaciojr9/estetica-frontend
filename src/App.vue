@@ -104,7 +104,12 @@
 import { ref, onMounted, watch } from 'vue'
 
 // 🔗 CONEXÃO COM O BACKEND DO GOOGLE CLOUD RUN
+// ANTIGA PARA O CLOUD RUN
 const API_URL = 'https://estetica-backend-k6e4vrjs3a-uc.a.run.app/api/procedimentos'
+
+// NOVA PARA O RENDER
+const API_URL = 'https://estetica-backend-pfmq.onrender.com/api/procedimentos'
+
 
 const abaAtiva = ref('publico')
 const maiorDeIdade = ref(localStorage.getItem('18plus') === 'true')
